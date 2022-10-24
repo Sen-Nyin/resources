@@ -14,39 +14,35 @@ Defaults to Min for mobile first
 
 ```scss
 @include breakpoint(md) {
-}
+} ;
 ```
 
 Or make it max for desktop first
 
 ```scss
 @include breakpoint(md, max) {
-}
+} ;
 ```
 
 or just put your own viewport values in:
 
 ```scss
 @include breakpoint(965, max) {
-}
+} ;
 ```
 
 ### Clamps
 
 ```scss
-@include getClamp(font-size, minFontSize, maxFontSize, minViewport, maxViewport) @include getClamp(
-    padding,
-    minPadding,
-    maxPadding,
-    minViewport,
-    maxViewport
-  );
+@include getClamp(font-size, minFontSize, maxFontSize, minViewport, maxViewport);
+
+@include getClamp(padding, minPadding, maxPadding, minViewport, maxViewport);
 ```
 
 or
 
 ```scss
-#{insertClamp(minSize, maxSize, minViewport, maxViewport)}
+#{insertClamp(minSize, maxSize, minViewport, maxViewport)};
 ```
 
 Can also use the breakpoints:
