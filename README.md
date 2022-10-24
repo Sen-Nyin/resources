@@ -50,12 +50,7 @@ Can also use the breakpoints:
 ```scss
 @include getClamp(font-size, minFontSize, maxFontSize, sm, xl);
 
-#{insertClamp(
-    minSize,
-    maxSize,
-    sm,
-    xl
-  )};
+#{insertClamp(minSize, maxSize, sm, xl )};
 ```
 
 ## Colors.scss
