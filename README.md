@@ -42,6 +42,13 @@ or
 #{insertClamp(minSize, maxSize, minViewport, maxViewport)}
 ```
 
+Can also use the breakpoints:
+
+```sass
+@include getClamp(font-size, minFontSize, maxFontSize, sm, xl);
+#{insertClamp(minSize, maxSize, sm, xl)};
+```
+
 ## Colors.scss
 
 This is the Tailwind colour palette put into Scss variables. Please see their page: https://tailwindcss.com/docs/customizing-colors
